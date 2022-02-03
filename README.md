@@ -15,7 +15,7 @@ npx hardhat help
 ```
 
 # STEPS:
-OPen your terminal and run this:
+Open your terminal and run this:
 ```shell
 npm init -y
 npm install --save-dev hardhat
