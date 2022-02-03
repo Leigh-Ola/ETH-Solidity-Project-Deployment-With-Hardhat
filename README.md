@@ -70,7 +70,7 @@ main()
     console.error(error);
     process.exit(1);
 });
-```
+``` 
 Add the following to your `package.json` scripts:
 ```json
 "deploy:local": "hardhat run --network localhost scripts/deployMyContract.js"
