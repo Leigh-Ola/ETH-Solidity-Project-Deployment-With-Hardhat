@@ -15,6 +15,7 @@ npx hardhat help
 ```
 
 # STEPS:
+OPen your terminal and run this:
 ```shell
 npm init -y
 npm install --save-dev hardhat
@@ -70,7 +71,7 @@ main()
     process.exit(1);
 });
 ```
-Add the following to your package.json scripts:
+Add the following to your `package.json` scripts:
 ```json
 "deploy:local": "hardhat run --network localhost scripts/deployMyContract.js"
 "local-testnet": "hardhat node"
@@ -86,3 +87,4 @@ Now, go back to your initial terminal and run:
 ```shell
 npm run deploy:local
 ```
+### Congratulations
