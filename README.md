@@ -87,4 +87,18 @@ Now, go back to your initial terminal and run:
 ```shell
 npm run deploy:local
 ```
+
+## NOTE:
+Before attempting to connect to your smart contract from the browser (with [web3.js](https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js), for example), setup Remix ide [here](https://remix.ethereum.org), compile your contract, and deploy it with the "Web3 Provider" option.
+
+Then, setup a GETH client with the following command:
+```cmd
+geth --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net --vmdebug --datadir <path/to/local/folder/for/test/chain> --dev console
+```
+In a production setting, it may be wise to specify the allowed domains, rather than using a catch-all "*". For example:
+```cmd
+geth --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --vmdebug --datadir <path/to/local/folder/for/test/chain> --dev console
+```
+> metamask http.corsdomain value (if required): "chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn"
+
 ### Congratulations
