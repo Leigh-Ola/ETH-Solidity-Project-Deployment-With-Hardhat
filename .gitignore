@@ -7,3 +7,6 @@ typechain
 #Hardhat files
 cache
 artifacts
+test/geth
+test/keystore
+test/history
